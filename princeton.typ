@@ -109,9 +109,10 @@
 
 
 #let toc-slide(toc_title) = slide[
-  #set align(left + horizon)
-  #text(size: 1.5em, weight: "bold", fill: color-a)[#toc_title]
+  #set align(left + top)
+  #text(size: 2em, weight: "bold", fill: color-a)[#toc_title]
   #v(0.8em)
+  #set text(size: 1.5em)
   #toolbox.all-sections((sections, current) => {
     list(..sections)
   })
