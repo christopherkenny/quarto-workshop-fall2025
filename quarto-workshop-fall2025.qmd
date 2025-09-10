@@ -1,21 +1,17 @@
 ---
-title: A presentation with Polylux via Quarto
-subtitle: using `projector`
+title: Writing Reproducible Reports and Articles with Quarto
 author:
-  - name: Author One
+  - name: Christopher T. Kenny
     affiliations:
-      - name: Harvard University
-  - name: Author Two
-    affiliations:
-      - name: Yale University
-date: today
+      - name: Data-Driven Social Science
+date: 2025-10-20
 format:
   projector-typst:
     keep-typ: false
 bullet-incremental: true
 toc: true
 handout: false
-theme: greyer.typ
+theme: princeton.typ
 #background-image: projector.png
 ---
 
