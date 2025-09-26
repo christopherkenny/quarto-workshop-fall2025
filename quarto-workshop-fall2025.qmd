@@ -14,16 +14,56 @@ toc-title: "Today's Plan"
 handout: false
 theme: princeton.typ
 mainfont: Libre Franklin
-#background-image: projector.png
+fontsize: 16pt
 ---
 
 # What is Quarto?
 
 ## Quarto
 
+- Publishing system based on Pandoc
+    - Input a markdown document, render to anything supported by Pandoc
+        - HTML, PDF, Word, Beamer, GFM, MediaWiki, etc.
+- Built by Posit, PBC (formerly RStudio)
+- Syntax builds on RMarkdown, but language agnostic
+    - Existing `.Rmd` files and most Jupyter notebooks can be run by Quarto
+- Reproducible system to combine code and text together
+
+
+## Rendering Behind-the-Scenes
+
+```{=typst}
+#set align(horizon + center)
+```
+
+
+![](figs/rstudio-qmd-how-it-works.png){fig-align="center" width="100%"}
+
+
+Figure from <https://quarto.org/docs/faq/rmarkdown.html>
+
 ## The `.qmd` file
 
-## Basic formats
+Two main components:
+
+. . .
+
+1. YAML header
+    1. Specify title, authors, and frontmatter
+    2. Identify output type (e.g., PDF, PowerPoint, HTML)
+    3. Style the document (e.g., pick fonts `mainfont: Libre Franklin`)
+
+. . .
+
+2. Body
+    1. Contains text
+    2. Include LaTeX equations `$x^2$` becomes $x^2$
+    3. Write code chunks in R, Python, Julia, Observable, etc.
+    4. Include raw chunks with format-specific code (e.g., HTML or Typst blocks)
+
+## Why Quarto?
+
+## Output formats
 
 # Including Text, Tables, and Figures
 
@@ -45,6 +85,20 @@ mainfont: Libre Franklin
 
 # Quarto Extensions
 
+# Styling Architecture
+
+## brand.yml
+
+## Partials
+
 # Journal Articles
 
 # Academic Websites
+
+# Resources
+
+## Quarto Documentation
+
+## Extension Listings
+
+## These Slides

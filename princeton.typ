@@ -47,7 +47,7 @@
       #set text(fill: color-c)
       #grid(
         columns: (25%, 1fr, 15%, 10%),
-        rows: (1.5em, auto),
+        rows: (1.4em),
         align: (center, center, center, center),
         grid.cell(fill: color-a, stroke: color-a, short-author),
         grid.cell(fill: color-b, stroke: color-b, short-title),
