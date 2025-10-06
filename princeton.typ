@@ -52,7 +52,7 @@
         grid.cell(fill: color-a, stroke: color-a, short-author),
         grid.cell(fill: color-b, stroke: color-b, short-title),
         grid.cell(fill: color-b, stroke: color-b, short-date),
-        grid.cell(fill: color-b, stroke: color-b, align: center)[#toolbox.slide-number/#toolbox.last-slide-number]
+        grid.cell(fill: color-b, stroke: color-b, align: center)[#toolbox.slide-number]
       )
     ]
   ]

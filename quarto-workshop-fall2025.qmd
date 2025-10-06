@@ -63,6 +63,8 @@ Two main components:
 
 ## Why Quarto?
 
+
+
 ## Output formats
 
 # Including Text, Tables, and Figures
@@ -99,6 +101,29 @@ Two main components:
 
 ## Quarto Documentation
 
+```{=typst}
+#set align(horizon)
+```
+
+![](figs/quarto-documentation.png){fig-align="center" height=80%}
+
 ## Extension Listings
+
+```{=typst}
+#set align(horizon)
+```
+
+:::: {.columns align=center totalwidth=100%}
+
+::: {.column width="60%"}
+![](figs/quarto-org-listing.png)
+:::
+
+::: {.column width="40%"}
+![](figs/awesome-quarto.png)
+:::
+
+::::
+
 
 ## These Slides
