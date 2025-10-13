@@ -74,12 +74,34 @@ Two main components:
 
 ## Output formats
 
-## Select Journal Formats
+```{=typst}
+#set align(horizon)
+```
+
+- Articles: PDF (LaTeX, Typst), Word
+- Slides: Beamer, RevealJS, PowerPoint
+- Websites: Dashboards, Static HTML, or Shiny
+- Books: PDF and HTML
+- All other formats supported by Pandoc (e.g., Wiki, Markdown, JATS, InDesign, ePub)
+
+
+## Selected academic journal templates
+
+```{=typst}
+#set align(horizon)
+```
+
+- General science: Science, Nature, PNAS, PLOS
+- Major publishers: Taylor and Francis, Cambridge University Press, Springer, Elsevier
+- Social sciences: Annual Reviews, APSR, BJPS, PA, PSRM, Perspectives, APA, and more
 
 
 # Including Text, Tables, and Figures
 
 ## Writing in Quarto
+
+
+
 
 ## Cross references
 
