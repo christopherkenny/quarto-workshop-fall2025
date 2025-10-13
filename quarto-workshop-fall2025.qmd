@@ -73,11 +73,89 @@ Two main components:
 
 ## Cross references
 
+
 ## Bibliographies
 
 ## Including figures
 
+```{=typst}
+#set align(horizon + center)
+```
+
+:::: {.columns align=center totalwidth=100%}
+
+::: {.column width="65%"}
+```
+![Caption](DDSS-stacked_PU_shield_black.png)
+```
+:::
+
+::: {.column width="35%"}
+![Caption](DDSS-stacked_PU_shield_black.png)
+:::
+
+::::
+
+## Including Subfigures
+
+```
+::: {#fig-subfig layout-ncol=2}
+
+![A](DDSS-stacked_PU_shield_black.png)
+
+![B](DDSS-stacked_PU_shield_black.png)
+
+More Caption
+
+:::
+```
+
+
+::: {#fig-subfig layout-ncol=2}
+
+![A](DDSS-stacked_PU_shield_black.png)
+
+![B](DDSS-stacked_PU_shield_black.png)
+
+More Caption
+
+:::
+
+
 ## Making a table
+
+```{=typst}
+#set align(horizon + center)
+```
+
+
+:::: {.columns align=center totalwidth=100%}
+
+::: {.column width="65%"}
+```
+| University |  Color  |
+|:-----------|--------:|
+| Princeton  | #E98338 |
+| Harvard    | #A51C30 |
+| Cornell    | #B31B1B |
+| Brown      | #ED1C24 |
+
+: Red and orange university colors {#tbl-colors}
+```
+:::
+
+::: {.column width="35%"}
+| University |  Color   |
+|:-----------|---------:|
+| Princeton  | #E98338 |
+| Harvard    | #A51C30 |
+| Cornell    | #B31B1B |
+| Brown      | #ED1C24 |
+
+: Red and orange university colors {#tbl-colors}
+:::
+
+::::
 
 # Including Code
 
