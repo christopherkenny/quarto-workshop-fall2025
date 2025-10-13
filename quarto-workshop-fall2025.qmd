@@ -100,15 +100,14 @@ Two main components:
 
 ## Writing in Quarto
 
-
-
-
 ## Cross references
 
 
 ## Bibliographies
 
 ## Including figures
+
+Basic figures can be included with `![]()` syntax:
 
 ```{=typst}
 #set align(horizon + center)
@@ -137,11 +136,10 @@ Two main components:
 
 ![B](DDSS-stacked_PU_shield_black.png)
 
-More Caption
+More Captions
 
 :::
 ```
-
 
 ::: {#fig-subfig layout-ncol=2}
 
@@ -149,18 +147,20 @@ More Caption
 
 ![B](DDSS-stacked_PU_shield_black.png)
 
-More Caption
+More Captions
 
 :::
 
 
 ## Making a table
 
+Tables use "pipe" syntax:
+
 ```{=typst}
 #set align(horizon + center)
+
+
 ```
-
-
 :::: {.columns align=center totalwidth=100%}
 
 ::: {.column width="65%"}
@@ -185,6 +185,37 @@ More Caption
 | Brown      | #ED1C24 |
 
 : Red and orange university colors {#tbl-colors}
+:::
+
+::::
+
+## Raw Content
+
+Raw content (e.g. HTML in a webpage) can be included with a special block:
+
+```{=typst}
+#set align(horizon + center)
+```
+:::: {.columns align=center totalwidth=100%}
+
+::: {.column width="50%"}
+
+````
+```{=typst}
+#set text(fill: blue)
+Some example text.
+```
+````
+
+:::
+
+::: {.column width="50%"}
+
+```{=typst}
+#set text(fill: blue)
+Some example text.
+```
+
 :::
 
 ::::
