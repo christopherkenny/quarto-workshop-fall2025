@@ -63,9 +63,19 @@ Two main components:
 
 ## Why Quarto?
 
-
+- Common input format for many output types
+- Many journal templates for general and social sciences
+  - Lowers the barrier on resubmitting elsewhere
+- Reproducible writing
+  - Avoid copying data or hard-coding statistics
+  - Place code + text together
+- Write in Markdown instead of LaTeX (or Typst or HTML ...)
+- Markdown formats work well with version control
 
 ## Output formats
+
+## Select Journal Formats
+
 
 # Including Text, Tables, and Figures
 
