@@ -115,9 +115,10 @@ Quarto builds on Pandoc's flavor of Markdown
 ## Bibliographies
 
 - Quarto supports `.bib`/`.bibtex`, CSL `.json`/`.yaml`, and  `.ris` bibliography files.
-- Can be styled with
-
-
+- Can be styled with CSL for all formats
+- Additional customization available for LaTeX: natbib, biber, biblatex
+- Can also use Pandoc's implementation of CiteProc
+  - Similar to the citation system in Word
 
 ## Including figures
 
