@@ -98,10 +98,19 @@ Two main components:
 
 # Including Text, Tables, and Figures
 
-## Writing in Quarto
+## Writing 101 in Quarto
 
-## Cross references
+Quarto builds on Pandoc's flavor of Markdown
 
+- Code blocks are fenced with backticks \` code \` becomes `code`
+- Italics with `*italics*`
+- Bold with `**bold**`
+- Headers with `# Header Level 1`, `## Header Level 2`, etc.
+- Lists with `- item` or `1. item`
+- Links with `[text](url)` or `<url>`
+- LaTeX math with `$math$` for inline or `$$math$$` for display
+- Reference figures, tables, and sections with `@fig-label`, `@tbl-label`, and `@sec-label`
+- Reference citations with `[@citation]` for parenthetical or `@citation` for prose
 
 ## Bibliographies
 
@@ -268,3 +277,15 @@ Some example text.
 
 
 ## These Slides
+
+Written in Quarto
+
+. . .
+
+Using Typst + Polylux via [`christopherkenny/projector`](https://github.com/christopherkenny/projector)
+
+. . .
+
+Source available:
+
+<https://github.com/christopherkenny/quarto-workshop-fall2025/blob/main/quarto-workshop-fall2025.qmd>
