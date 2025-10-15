@@ -114,6 +114,11 @@ Quarto builds on Pandoc's flavor of Markdown
 
 ## Bibliographies
 
+- Quarto supports `.bib`/`.bibtex`, CSL `.json`/`.yaml`, and  `.ris` bibliography files.
+- Can be styled with
+
+
+
 ## Including figures
 
 Basic figures can be included with `![]()` syntax:
