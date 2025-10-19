@@ -239,19 +239,122 @@ Some example text.
 
 ## Supported Languages
 
+Quarto supports code execution in multiple languages:
+
+- **R**: Native support with knitr engine
+- **Python**: Native support via Jupyter
+- **Julia**: Support via Jupyter or new `julia` engine!
+- **Observable JS**: Standalone support for interactive messages
+- **Other languages**: Any language with a Jupyter kernel (e.g., Stata)
+  - I have heard that this works surprisingly well!
+- **Other languages**: Custom support via knitr for select languages (e.g., `rust` via `rextendr`)
+
 ## Formatting
+
+Control code chunk behavior with options:
+
+- `#| echo: false` - Hide code, show output only
+- `#| eval: false` - Show code but don't run it
+- `#| warning: false` / `message: false` - Suppress R warnings/messages
+- `#| fig-width: 8` / `#| fig-height: 6` - Control figure dimensions
+- `#| label: fig-myplot` - Add cross-reference labels
+- `#| cache: true` - Cache expensive computations
 
 # Quarto Extensions
 
-# Styling Architecture
+## Extensions
+
+Extend Quarto's functionality with extensions:
+
+- **Formats**: Custom output formats (e.g., journal templates, custom PDFs)
+- **Filters**: Modify document processing (e.g., add custom syntax)
+- **Shortcodes**: Reusable content snippets (`{{{< video ... >}}}`, `{{{< include ... >}}}`)
+- **Revealjs plugins**: Enhanced slide presentations
+
+Install with: `quarto add username/extension-name`
 
 ## brand.yml
 
+Centralized brand configurations
+
+Define once, apply everywhere:
+
+- Colors (primary, secondary, palettes)
+- Typography (fonts, sizes)
+- Logos and images
+- Apply across HTML, PDFs, slides, websites
+
+## brand.yml
+
+Example: [christopherkenny/princeton-brand.yml](https://github.com/christopherkenny/princeton-brand.yml)
+
+```
+meta:
+  name:
+    full: Princeton University
+    short: Princeton
+  link:
+    home: https://www.princeton.edu/
+    twitter: https://x.com/Princeton
+    linkedin: https://www.linkedin.com/school/princeton-university/
+    facebook: https://www.facebook.com/PrincetonU/
+  founded: 1746
+
+color:
+  palette:
+    princeton-orange: "#e98338"
+    deep-blue: "#092264"
+
+typography:
+  fonts:
+    - family: "Princeton Monticello Display"
+      source: file
+      files:
+        - path: https://drive.google.com/file/d/19HUJ52fQbbQtvuUKUV5h0hJtaf6NJIUQ
+          weight: regular
+
+logo:
+  images:
+    primary:
+      path: assets/PU_mark.png
+```
+
+## Journal Articles
+
+Workflow for academic writing:
+
+1. Start with a preprint template: `quarto use template christopherkenny/ctk-article`
+2. Write the paper in Markdown with embedded code
+3. Switch to a journal template: `quarto use template quarto-journals/jss`
+4. Add any journal-specific things to the header
+5. Render to PDF: `quarto render manuscript.qmd`
+6. Submit generated PDF (+ source files)
+7. Get desk rejected
+8. Reformat by importing next template `quarto add template christopherkenny/nature`
+
 ## Partials
 
-# Journal Articles
+- How it all works: partial files
+- One core template file includes 4-15 subparts
+  - Each subfile = a partial
+- Edit the partials you need, use the defaults for the rest
+- Partials are broken into meaningful components
+  - Title, abstract, figure formatting, etc
+- Easy to use formats (e.g., Typst) have simple partials
+- Complex formats (e.g., HTML, LaTeX, revealjs) break out more pieces
+
 
 # Academic Websites
+
+## Demo
+
+```{=typst}
+#set align(center + horizon)
+```
+
+```
+quarto create project
+```
 
 # Resources
 
