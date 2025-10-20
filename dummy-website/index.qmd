@@ -1,0 +1,13 @@
+---
+title: "Aaron Burr"
+---
+
+![]({{< placeholder 200 100 format:svg >}}){width=20em}
+
+Second President
+
+# Research
+
+# Teaching
+
+# Contact

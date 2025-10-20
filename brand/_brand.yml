@@ -1,0 +1,73 @@
+# An unofficial implementation of brand.yml for Princeton University
+meta:
+  name:
+    full: Princeton University
+    short: Princeton
+  link:
+    home: https://www.princeton.edu/
+    twitter: https://x.com/Princeton
+    linkedin: https://www.linkedin.com/school/princeton-university/
+    facebook: https://www.facebook.com/PrincetonU/
+  founded: 1746
+
+color:
+  palette:
+    princeton-orange: "#e98338"
+    deep-blue: "#092264"
+    deep-red: "#89130d"
+    deep-purple: "#5b0f58"
+    deep-green: "#19460e"
+    light-blue: "#aac7da"
+    light-red: "#d9d1cb"
+    light-purple: "#d9d7e6"
+    light-green: "#d5deda"
+    tint-blue: "#7cdaf3"
+    tint-red: "#f5a5f9"
+    tint-purple: "#c9a7fa"
+    tint-green: "#8ae168"
+    white: "#afafaf"
+    light-grey: "#afafaf"
+    mid-grey: "#5b575d"
+    black: "#010101"
+
+typography:
+  fonts:
+    - family: "Princeton Monticello Display"
+      source: file
+      files:
+        - path: https://drive.google.com/file/d/19HUJ52fQbbQtvuUKUV5h0hJtaf6NJIUQ
+          weight: regular
+        - path: https://drive.google.com/file/d/164jnrt8yjIuik9LQS95xHSlOatRiniWu
+          style: italic
+    - family: "Flecha S"
+      source: file
+      files:
+        - path: https://drive.google.com/file/d/1kZI71fNBSGoIlu3bMw3C1sZjtN-cty55
+          weight: light
+        - path: https://drive.google.com/file/d/1iOcM97oGCWyZUAAXGKLrGccnAj_xUxFL
+          weight: light
+          style: italic
+    - family: "Caslon Doric"
+      source: file
+      files:
+        - path: https://drive.google.com/file/d/1LVlgEqmIVs8dNjkytiMilJLqRDnFxDXe
+          weight: bold
+    - family: "Libre Franklin"
+      source: google
+      weight: regular
+    - family: "Open Sans Pro"
+      source: google
+  base:
+    family: "Libre Franklin"
+  headings:
+    family: "Princeton Monticello Display"
+  monospace:
+    family: "Open Sans Pro"
+
+logo:
+  images:
+    primary:
+      path: assets/PU_mark.png
+  small: primary
+  medium: primary
+  large: primary

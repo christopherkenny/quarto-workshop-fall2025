@@ -1,0 +1,31 @@
+---
+title: Demo Example with Branding
+author: Christopher T. Kenny
+format: typst
+abstract: Let me add some description.
+brand: _brand.yml
+bibliography: bibliography.bib
+---
+
+Here is some text to start us off!
+
+# And then a heading
+
+![My figure]({{< placeholder 100 100 >}}){#fig-1}
+
+
+Some text referencing @fig-1 and @tbl-example to come.
+We learned to do this because of @ho2007matching [@king1994designing].
+
+
+::: {#tbl-example}
+
+| school | color |
+|:-------|-------|
+| Princeton | Orange |
+| Cornell   | Carnelian |
+| Michigan | Go Blue |
+
+Description of table
+
+:::

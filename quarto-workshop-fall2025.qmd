@@ -384,6 +384,25 @@ quarto create project
 
 ::::
 
+## Things not covered today
+
+```{=typst}
+#set align(horizon)
+```
+
+Using or making filters <https://quarto.org/docs/extensions/filters.html>
+
+. . .
+
+Shortcodes <https://quarto.org/docs/authoring/shortcodes.html>
+
+. . .
+
+Interactivity: Observable or Shiny <https://quarto.org/docs/interactive/>
+
+. . .
+
+Making your own extensions <https://christophertkenny.com/posts/2023-07-01-creating-quarto-journal-articles/> and <https://quarto.org/docs/extensions/>
 
 ## These Slides
 
