@@ -7,3 +7,4 @@
 
 **/*.quarto_ipynb
 /dummy-website/_site
+/website/_site

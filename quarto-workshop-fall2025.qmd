@@ -244,7 +244,7 @@ Quarto supports code execution in multiple languages:
 - **R**: Native support with knitr engine
 - **Python**: Native support via Jupyter
 - **Julia**: Support via Jupyter or new `julia` engine!
-- **Observable JS**: Standalone support for interactive messages
+- **Observable JS**: Standalone support for interactive graphs
 - **Other languages**: Any language with a Jupyter kernel (e.g., Stata)
   - I have heard that this works surprisingly well!
 - **Other languages**: Custom support via knitr for select languages (e.g., `rust` via `rextendr`)
@@ -255,7 +255,7 @@ Control code chunk behavior with options:
 
 - `#| echo: false` - Hide code, show output only
 - `#| eval: false` - Show code but don't run it
-- `#| warning: false` / `message: false` - Suppress R warnings/messages
+- `#| warning: false` / `message: false` - Suppress warnings or messages
 - `#| fig-width: 8` / `#| fig-height: 6` - Control figure dimensions
 - `#| label: fig-myplot` - Add cross-reference labels
 - `#| cache: true` - Cache expensive computations

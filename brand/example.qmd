@@ -1,0 +1,60 @@
+---
+title: "Example"
+author: Christopher T. Kenny
+#brand: _brand.yml
+format: typst
+number-sections: true
+abstract: A summary of the paper and why it should be published.
+bibliography: bibliography.bib
+---
+
+Some text in the body. Reference a paper in prose, such as such @ho2007matching [@king1994designing].
+
+# Section 1 goes here
+
+Add more text.
+
+etc. etc. Continue paragraph.
+
+# New Section {#sec-new}
+
+Reference the @sec-new.
+
+# Code Example
+
+```{r}
+#| echo: false
+#| label: fig-mtcars
+library(ggplot2)
+
+mtcars |>
+    ggplot() +
+    geom_point(aes(x = cyl, y = mpg))
+
+mtcars |>
+    ggplot() +
+    geom_point(aes(x = mpg, y = cyl))
+```
+
+Write something about mtcars. It has `r nrow(mtcars)` rows. Details about the dataset are in @fig-mtcars-1.
+
+![Example figure]({{< placeholder 200 100 >}})
+
+| University |   Color |
+|:-----------|--------:|
+| Princeton  |  Orange |
+| Cornell    |     Red |
+| Michigan   | Go Blue |
+
+: Caption {#tbl-colors}
+
+Add some text and reference @tbl-colors.
+
+::: {#tbl-colors2}
+| University | Color |
+|:-----------|------:|
+| Dartmouth  | Green |
+| Rutgers    |   Red |
+
+Add a caption here
+:::
