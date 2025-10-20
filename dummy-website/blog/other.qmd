@@ -1,0 +1,9 @@
+---
+title: "Another article"
+author: Chris Kenny
+description: A demo
+---
+
+With some text
+
+{{< placeholder 100 100 >}}\
